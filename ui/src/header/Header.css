@@ -1,0 +1,6 @@
+.header {
+  display: grid;
+  grid-area: 1 / left-center / 2 / right-center;
+  text-align: center;
+  align-items: center;
+}

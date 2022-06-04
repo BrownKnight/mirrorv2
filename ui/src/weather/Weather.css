@@ -1,0 +1,6 @@
+.weather {
+  display: grid;
+  grid-area: 1 / left / 2 / center-left;
+  text-align: center;
+  align-items: center;
+}

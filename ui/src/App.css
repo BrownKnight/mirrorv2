@@ -1,0 +1,6 @@
+.App {
+  display: grid;
+  grid-template-columns: [left] 1fr [left-center] 1fr [center-left] 1fr [center-right] 1fr [right-center] 1fr [right];
+  grid-template-rows: 10vh;
+  gap: 1em;
+}
