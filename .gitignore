@@ -107,3 +107,6 @@ dist
 bin
 obj
 .vs
+.vscode
+**/wwwroot
+.DS_Store

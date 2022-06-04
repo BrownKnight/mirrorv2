@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  mirrorv2:
+    image: mirrorv2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - ASPNETCORE_URLS=http://+:5001
+    env_file:
+      - .env
+    ports:
+      - 5001:5001
