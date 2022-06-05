@@ -12,3 +12,15 @@ services:
       - .env
     ports:
       - 5001:5001
+
+  latest-master:
+    image: ghcr.io/brownknight/mirrorv2:latest
+    profiles:
+      - latest-master
+    environment:
+      - ASPNETCORE_URLS=http://+:5001
+    env_file:
+      - .env
+    ports:
+      - 5001:5001
+
