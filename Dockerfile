@@ -23,4 +23,7 @@ WORKDIR /app
 COPY --from=dotnet-build /publish .
 COPY --from=node-build /ui/build ./wwwroot
 EXPOSE 5001
+
+LABEL org.opencontainers.image.source="https://github.com/BrownKnight/mirrorv2"
+
 ENTRYPOINT ["dotnet", "MirrorV2.Services.dll"]

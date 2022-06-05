@@ -1,0 +1,10 @@
+version: 1
+wording:
+  patch:
+    - "[PATCH]"
+  minor:
+    - "[MINOR]"
+  major:
+    - "[MAJOR]"
+  release:
+    - "[RELEASE]"
