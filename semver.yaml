@@ -7,4 +7,4 @@ wording:
   major:
     - "[MAJOR]"
   release:
-    - "[RELEASE]"
+    - "[RELEASE_CANDIDATE]"
