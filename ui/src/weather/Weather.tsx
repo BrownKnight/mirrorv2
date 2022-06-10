@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Weather.css";
 import data from "./phrases.json";
 
-export default function Weather() {
+export default function Weather(props: {refreshToken: number}) {
   const [icon, setIcon] = useState("clear_day");
   const [temperature, setTemperature] = useState(99);
   const [apparentTemperature, setApparentTemperature] = useState(98);
@@ -13,7 +13,7 @@ export default function Weather() {
     fetch("/api/weather")
       .then((res) => res.json())
       .then((json) => calculatePhrase(json));
-  }, []);
+  }, [props.refreshToken]);
 
   const calculatePhrase = (json: any) => {
     const summary = json.summary;
